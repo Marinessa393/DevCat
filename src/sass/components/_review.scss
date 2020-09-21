@@ -172,14 +172,14 @@ p {
   line-height: 1.67;
 
   @media screen and (min-width: 576px) {
-    height: 120px;
+    height: 110px;
     padding-left: 0;
     overflow: hidden;
     transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
   }
 
   @media screen and (min-width: 768px) {
-    height: 135px;
+    height: 115px;
     padding-left: 0;
     overflow: hidden;
     transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
