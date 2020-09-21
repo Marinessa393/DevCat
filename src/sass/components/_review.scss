@@ -54,6 +54,7 @@ p {
   margin-right: auto;
   margin-left: auto;
 
+
   @media screen and (min-width: 576px) {
     width: 490px;
     margin-right: auto;
@@ -99,14 +100,14 @@ p {
 .social-icon {
   display: flex;
   width: 48px;
-  height: 27px;
+  height: 48px;
   margin-right: auto;
   margin-left: auto;
-  fill: #436eab;
+  fill:  #800080;
 
   &:hover,
   :focus {
-    fill: $accent-color;
+    fill: black;
   }
 }
 
@@ -122,7 +123,7 @@ p {
   font-size: 14px;
   line-height: 1.214;
   letter-spacing: 0.08em;
-  color: $accent-color;
+  color: #800080;
 
   @media screen and (min-width: 768px) {
     margin-top: 20px;
@@ -203,7 +204,7 @@ p {
   padding: 0;
   right: 36px;
   bottom: 34px;
-  color: #ff6b08;
+  color: #800080;
   font-size: 12px;
   line-height: 20px;
   font-weight: 500;
@@ -224,6 +225,7 @@ p {
 .slider {
   width: 100%;
   margin: auto;
+  
 
   @media screen and (min-width: 768px) {
     width: 688px;
@@ -237,7 +239,7 @@ p {
 /* Слайдер */
 .slick-slider {
   position: relative;
-  width: 280px;
+  width: 280px; 
 
   @media screen and (min-width: 576px) {
     width: 490px;
@@ -263,7 +265,8 @@ p {
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
-  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  box-shadow: -5px 8px 26px rgba(221, 34, 205, 0.8);
+  
 }
 .slick-list.draggable {
 }
@@ -310,6 +313,10 @@ p {
   outline: none;
   border: none;
 
+  @media screen and (min-width: 576px) {
+    bottom: 50%;
+  }
+
   @media screen and (min-width: 768px) {
     bottom: 50%;
   }
@@ -318,30 +325,32 @@ p {
 /* Стрелка влево */
 .slick-arrow.slick-prev {
   left: 0%;
-  background: url(/images/reviews/left-i.svg) 0 0 no-repeat;
+  background: url(/images/reviews/paw-l.svg) 0 0 no-repeat;
   background-size: contain;
   border-radius: 50%;
+  transform: rotate(45deg);
 
   @media screen and (min-width: 768px) {
     left: -5%;
   }
   @media screen and (min-width: 1344px) {
-    left: -7%;
+    left: -17%;
   }
 }
 
 /* Стрелка вправо */
 .slick-arrow.slick-next {
   right: 0%;
-  background: url(/images/reviews/right-i.svg) 0 0 no-repeat;
+  background: url(/images/reviews/paw-r.svg) 0 0 no-repeat;
   background-size: contain;
   border-radius: 50%;
+  transform: rotate(-45deg);
 
   @media screen and (min-width: 768px) {
     right: -5%;
   }
   @media screen and (min-width: 1344px) {
-    right: -7%;
+    right: -17%;
   }
 }
 
@@ -358,6 +367,7 @@ p {
   margin-top: 20px;
   margin-bottom: 0;
   padding: 0;
+  flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     margin-top: 30px;
@@ -392,9 +402,10 @@ p {
 
 /* Активная точка */
 .slick-dots li.slick-active {
-  border: 2px solid #ff6b08;
+  border: 2px solid #800080;
   border-radius: 50%;
   outline-style: none;
+  box-shadow: 0 0 10px 1px #800080;
   
   
 }
@@ -407,22 +418,61 @@ p {
   &:nth-last-of-type(-n + 1) {
     margin-right: 0px;
   }
+
+  &:nth-child(4) {
+    margin-right: 0px;
+  }
   @media screen and (min-width: 576px) {
-  margin-right: 15px;  }
+  margin-right: 10px; 
+
+  &:nth-child(4) {
+    margin-right: 10px;
+  } 
+}
 
   @media screen and (min-width: 768px) {
   margin-right: 20px;  }
 
   @media screen and (min-width: 1344px) {
-  margin-right: 30px;  }
-
+  margin-right: 30px;  
+  &:nth-child(4) {
+    margin-right: 30px;
+  }
 }
+}
+
 #slick-slide-control00 {
-  background-image: url(/images/reviews/item1_1.png);
+  background-image: url(/images/reviews/cat2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #slick-slide-control01 {
-  background-image: url(/images/reviews/item2_2.png);
+  background-image: url(/images/reviews/cat1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #slick-slide-control02 {
-  background-image: url(/images/reviews/item3_3.png);
+  background-image: url(/images/reviews/cat3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#slick-slide-control03 {
+  background-image: url(/images/reviews/cat4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#slick-slide-control04 {
+  background-image: url(/images/reviews/cat6.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#slick-slide-control05 {
+  background-image: url(/images/reviews/cat7.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#slick-slide-control06 {
+  background-image: url(/images/reviews/cat8.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
