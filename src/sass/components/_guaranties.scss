@@ -100,21 +100,21 @@
     z-index: 2;
     display: block;
     content: '';
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     position: absolute;
-    left: -11px;
-    top: -6.5px;
+    left: -9px;
+    top: -3px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../images/icons/fire.svg);
+    background-image: url(../images/icons/paw-resized.svg);
 
     @media screen and (min-width: 1344px) {
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       background-size: contain;
       top: -6.5px;
-      left: -8px;
+      left: -6px;
     }
   }
 }
