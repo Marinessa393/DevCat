@@ -1,0 +1,428 @@
+.reviews-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  @media screen and (min-width: 1344px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+.reviews-title {
+  padding-bottom: 30px;
+}
+.reviews-title-tablet {
+  padding-bottom: 40px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-title {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews-title {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+  }
+  .reviews-title-tablet {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews-title {
+    font-size: 46px;
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+.slider_item {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 576px) {
+    width: 490px;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 688px;
+    display: flex;
+    text-align: left;
+    
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: 1090px;
+    display: flex;
+  }
+}
+
+.our_client {
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 20px; */
+
+  @media screen and (min-width: 768px) {
+  }
+}
+.client-photo {
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 26px;
+  padding-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 46px;
+  }
+}
+.social-link,
+.social-icon {
+  display: flex;
+  width: 48px;
+  height: 27px;
+  margin-right: auto;
+  margin-left: auto;
+  fill: #436eab;
+
+  &:hover,
+  :focus {
+    fill: $accent-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info_our_client {
+    width: calc(70% - 40px);
+  }
+}
+
+.client_name {
+  margin-top: 26px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1344px) {
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 1.233;
+  }
+}
+.client_grades {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.08em;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 40px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 380px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.client_feedback {
+  margin: 0;
+  height: 165px;
+  overflow: hidden;
+  transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+
+  @media screen and (min-width: 576px) {
+    height: 120px;
+    padding-left: 0;
+    overflow: hidden;
+    transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 135px;
+    padding-left: 0;
+    overflow: hidden;
+    transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+
+  @media screen and (min-width: 1344px) {
+    height: 168px;
+    font-size: 18px;
+    line-height: 1.555;
+    overflow: hidden;
+    transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+}
+.client_feedback.active {
+  height: fit-content;
+  overflow: visible;
+  transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.hidden-button {
+  font-family: 'MontserratM', sans-serif;
+  margin: 0;
+  padding: 0;
+  right: 36px;
+  bottom: 34px;
+  color: #ff6b08;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  overflow: visible;
+  outline: none;
+  
+
+  @media screen and (min-width: 1344px) {
+    font-size: 18px;
+    line-height: 1.555;
+  }
+}
+
+.slider {
+  width: 100%;
+  margin: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 688px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: 1090px;
+  }
+}
+
+/* Слайдер */
+.slick-slider {
+  position: relative;
+  width: 280px;
+
+  @media screen and (min-width: 576px) {
+    width: 490px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 688px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: 1090px;
+  }
+}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+.slick-list.draggable {
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide {
+  padding: 20px 20px 30px 20px;
+
+}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+  
+}
+
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 10;
+  outline: none;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    bottom: 50%;
+  }
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 0%;
+  background: url(/images/reviews/left-i.svg) 0 0 no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    left: -5%;
+  }
+  @media screen and (min-width: 1344px) {
+    left: -7%;
+  }
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 0%;
+  background: url(/images/reviews/right-i.svg) 0 0 no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    right: -5%;
+  }
+  @media screen and (min-width: 1344px) {
+    right: -7%;
+  }
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+
+/* Точки (булиты) */
+.slick-dots {
+  position: relative;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1344px) {
+    margin-top: 40px;
+  }
+
+
+}
+.slick-dots li button {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  font-size: 0;
+  border: none;
+  outline-color: orangered;
+  outline: none;
+  
+  @media screen and (min-width: 768px) {
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+  }
+  @media screen and (min-width: 1344px) {
+    width: 74px;
+    height: 74px;
+    background-size: contain;
+  }
+  }
+
+
+/* Активная точка */
+.slick-dots li.slick-active {
+  border: 2px solid #ff6b08;
+  border-radius: 50%;
+  outline-style: none;
+  
+  
+}
+/* Элемент точки */
+.slick-dots li {
+  border: 2px solid grey;
+  border-radius: 50%;
+  margin-right: 10px;
+
+  &:nth-last-of-type(-n + 1) {
+    margin-right: 0px;
+  }
+  @media screen and (min-width: 576px) {
+  margin-right: 15px;  }
+
+  @media screen and (min-width: 768px) {
+  margin-right: 20px;  }
+
+  @media screen and (min-width: 1344px) {
+  margin-right: 30px;  }
+
+}
+#slick-slide-control00 {
+  background-image: url(/images/reviews/item1_1.png);
+}
+#slick-slide-control01 {
+  background-image: url(/images/reviews/item2_2.png);
+}
+#slick-slide-control02 {
+  background-image: url(/images/reviews/item3_3.png);
+}

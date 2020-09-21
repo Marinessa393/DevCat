@@ -1,0 +1,214 @@
+.section-problems {
+  padding-top: 50px;
+  padding-bottom: 375px;
+  // max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: $primary-color;
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 160px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 59.5px;
+    padding-bottom: 176.5px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    padding-top: 100px;
+    padding-bottom: 282px;
+    background-image: url(../images/problems/fire-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 452px 455px contain;
+  }
+}
+
+.problems-title-wrap {
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    max-width: 866px;
+  }
+}
+
+.problems.line-break {
+  @media screen and (min-width: 576px) {
+    display: inline-block;
+  }
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+  color: $white-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.308;
+  }
+
+  @media screen and (min-width: 1344px) {
+    font-size: 46px;
+    line-height: 1.304;
+  }
+}
+
+.line-break {
+  display: block;
+
+  @media screen and (min-width: 1344px) {
+    display: inline-block;
+  }
+}
+
+.problems.accent-element {
+  color: $accent-color;
+}
+
+.overlay-container {
+  position: absolute;
+  bottom: -165px;
+  right: 50%;
+  transform: translateX(50%);
+  max-width: 280px;
+  width: 100%;
+  padding: 20px 14px 20px 30px;
+  background-color: $primary-bcg-color;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 536px;
+    bottom: -180px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 688px;
+    padding: 30px 96px 26px 96px;
+    bottom: -191px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    max-width: 1314px;
+    padding: 70px 112px 62px 114px;
+    bottom: -130px;
+  }
+}
+
+.problems.list {
+  @media screen and (min-width: 576px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.problems-item {
+  @media screen and (max-width: 767px) {
+    margin: 0 0 10px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    margin-bottom: 6px;
+    &:nth-child(2n + 1) {
+      width: 236px;
+      margin-right: 18px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-top: 28px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    margin-bottom: 8px;
+    &:nth-child(2n + 1) {
+      width: 236px;
+      margin-right: 22px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-top: 32px;
+    }
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: 336px;
+    &:not(:nth-child(3n)) {
+      margin-right: 40px;
+    }
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.dashnumber-wrap {
+  margin-bottom: 5px;
+  @media screen and (min-width: 1344px) {
+    margin-bottom: 10px;
+  }
+}
+
+.problems-dash {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+
+  @media screen and (min-width: 1344px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.problems-number {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.214;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+
+  @media screen and (min-width: 1344px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.problems-subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.714;
+  letter-spacing: 0.08em;
+  color: $primary-color;
+
+  @media screen and (min-width: 1344px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+// *,
+// ::after,
+// ::before {
+//   outline: 1px solid yellowgreen;
+// }

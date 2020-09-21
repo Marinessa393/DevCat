@@ -1,0 +1,102 @@
+body {
+  background-color: $primary-bcg-color;
+  color: $primary-color;
+  font-family: Montserrat, sans-serif;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 576px) {
+    width: 576px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: 1344px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.btn {
+  display: block;
+  padding: 14px 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media screen and (min-width: 320px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: 336px;
+    padding-top: 27px;
+    padding-bottom: 26px;
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+}
