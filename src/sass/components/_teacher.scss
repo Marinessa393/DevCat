@@ -50,6 +50,10 @@
   letter-spacing: 0.08em;
   color: $accent-color;
 
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    margin-top: 40px;
+  }
+
   @media screen and (min-width: 768px) {
     margin-top: 0px;
   }
@@ -145,7 +149,6 @@
 }
 
 .item-text {
-  position: relative;
   margin: 0px;
   font-weight: 600;
   font-size: 14px;
@@ -179,7 +182,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-top: -53px;
+    margin-top: -80px;
     margin-left: auto;
     width: calc(100% - 286px);
     letter-spacing: 0em;
@@ -187,18 +190,24 @@
 
   @media screen and (min-width: 1344px) {
     margin-left: auto;
-    margin-right: 112px;
-    margin-top: -364px;
+
+    margin-right: 400px;
+    margin-top: -30px;
     width: calc(50% - 15px);
     font-size: 18px;
     line-height: 1.56;
+  }
+
+  & span {
+    font-weight: 800;
+    color: #800080;
   }
 }
 
 .univer {
   display: inline-block;
   margin-top: 10px;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 12px;
   line-height: 1.67;
   text-decoration: underline;
