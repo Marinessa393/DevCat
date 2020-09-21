@@ -15,7 +15,7 @@
   max-width: 100%;
   padding: 50px 0px;
   color: $white-color;
-  background-color: $primary-color;
+  background-color: black;
   background-repeat: no-repeat;
   background-position: center;
   @media screen and (min-width: 768px) and (max-width: 1343px) {
@@ -50,6 +50,10 @@
     line-height: 1.36;
     vertical-align: top;
     letter-spacing: 0.03em;
+    & .crossed {
+      text-decoration: line-through;
+      text-decoration-color: #ff0081;
+    }
     @media screen and (min-width: 576px) and (max-width: 767px) {
       font-size: 20px;
       max-width: 500px;
@@ -70,7 +74,7 @@
     }
   }
   &-accent {
-    color: $accent-color;
+    color: #ff0081;
   }
 }
 .footer-text {
@@ -134,7 +138,7 @@
   width: 100%;
   padding: 15px 28px 16px 28px;
   background-color: transparent;
-  border: 1px solid $white-color;
+  border: 2px solid #ff0081;
   box-sizing: border-box;
   color: $white-color;
   font-weight: 600;
@@ -167,27 +171,6 @@
     outline: 2px solid $accent-color;
   }
 }
-.footer-button {
-  display: inline-block;
-  align-items: center;
-  margin-top: 50px;
-  color: $white-color;
-  background-color: $accent-color;
-  border: 2px solid $accent-color;
-  text-align: center;
-  transition: 250ms cubic-bezier(0.42, 0, 0.58, 1);
-  @media screen and (min-width: 768px) and (max-width: 1343px) {
-    margin-top: 31px;
-  }
-  @media screen and (min-width: 1343px) {
-    margin-top: 80px;
-  }
-  &:hover,
-  &:focus {
-    background-color: $white-color;
-    color: $accent-color;
-  }
-}
 
 // Contacts
 .footer .contacts {
@@ -216,23 +199,21 @@
     justify-content: flex-start;
   }
 }
-.footer-logo {
-  @media screen and (max-width: 767px) {
-    width: 84px;
-    height: 30px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 128px;
-    height: 45px;
-  }
-}
+
 .footer-logo-position {
   @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
+     width: 60px;
+  }
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
+    margin-left: 0;
+    margin-right: auto;
+     width: 65px;
   }
   @media screen and (min-width: 1344px) {
     margin-right: 290px;
+    width: 90px;
   }
 }
 .footer-links {
@@ -352,67 +333,96 @@
 // Background-image
 @media screen and (max-width: 767px) {
   .footer .registration {
-    background-image: url('../images/footer-images/footer-bg-mobile-1x-min.png');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/footer-images/gitcats-yay-mobile-min.png');
     background-size: cover;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/footer-images/footer-bg-mobile-1x-min.png');
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/footer-images/gitcats-yay-mobile-min.png');
     }
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1343px) {
-  .footer .registration {
-    background-image: url('../images/footer-images/footer-bg-tablet-1x.webp');
-    background-size: cover;
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/footer-images/footer-bg-tablet-2x.webp');
-    }
-  }
-}
-@media screen and (min-width: 1344px) {
-  .footer .registration {
-    background-image: url('../images/footer-images/footer-bg-desktop-1x.webp');
-    background-size: cover;
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/footer-images/footer-bg-desktop-2x.webp');
-    }
-  }
-}
+
 @media screen and (max-width: 767px) {
   .footer .registration {
-    background-image: url('../images/footer-images/footer-bg-mobile-1x-min.png');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/footer-images/gitcats-yay-mobile-min.png');
     background-size: cover;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/footer-images/footer-bg-mobile-2x-min.png');
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/footer-images/gitcats-yay-mobile-min.png');
     }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1343px) {
   .footer .registration {
-    background-image: url('../images/footer-images/footer-bg-tablet-1x-min.png');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/footer-images/gitcats-yay-tablet-min.png');
     background-size: cover;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/footer-images/footer-bg-tablet-2x-min.png');
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/footer-images/gitcats-yay-tablet-min.png');
     }
   }
 }
 @media screen and (min-width: 1344px) {
   .footer .registration {
-    background-image: url('../images/footer-images/footer-bg-desktop-1x-min.png');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/footer-images/gitcats-yay-desktop.png');
     background-size: cover;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/footer-images/footer-bg-desktop-2x-min.png');
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/footer-images/gitcats-yay-desktop.png');
     }
   }
+}
+
+
+// 
+
+
+
+.footer-button {
+  display: inline-block;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    margin-top: 31px;
+  }
+  @media screen and (min-width: 1343px) {
+    margin-top: 80px;
+  }
+	position: relative;
+	appearance: none;
+	background: #ff0081;
+	padding: 1em 2em;
+	border: none;
+	color: white;
+	outline: none;
+	overflow: hidden;
+	border-radius: 50px;
+	
+	span {
+		position: relative;
+		pointer-events: none;
+	}
+	
+	&::before {
+		--size: 0;
+
+		content: '';
+		position: absolute;
+		left: var(--x);
+		top: var(--y);
+		width: var(--size);
+		height: var(--size);
+		background: radial-gradient(circle closest-side, #800080, transparent);
+		transform: translate(-50%, -50%);
+		transition: width .2s ease, height .2s ease;
+	}
+	
+	&:hover::before {
+		--size: 400px;
+	}
 }
