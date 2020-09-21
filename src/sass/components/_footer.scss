@@ -204,10 +204,10 @@
   @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
-     width: 50px;
+     width: 60px;
   }
-    @media screen and (min-width: 768px) {
-    margin-left: auto;
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
+    margin-left: 0;
     margin-right: auto;
      width: 65px;
   }
