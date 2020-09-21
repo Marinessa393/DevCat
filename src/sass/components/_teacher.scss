@@ -1,17 +1,11 @@
 .teacher {
-  padding-top: 270px;
   padding-bottom: 50px;
 
   & p {
     margin: 0px;
   }
 
-  @media screen and (min-width: 768px) {
-    padding-top: 302px;
-  }
-
   @media screen and (min-width: 1344px) {
-    padding-top: 329px;
     padding-bottom: 98px;
   }
 }
