@@ -40,6 +40,19 @@
   }
 }
 
+.teacher-img {
+  @media screen and (min-width: 576px) {
+    width: calc(50% - 20px);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 243px;
+  }
+  @media screen and (min-width: 1343px) {
+    width: 530px;
+  }
+}
+
 .teacher-about span {
   display: block;
   margin-top: 5px;
@@ -178,11 +191,12 @@
   }
 
   @media screen and (min-width: 576px) and (max-width: 767px) {
+    margin-top: 10px;
     font-size: 13px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-top: -80px;
+    margin-top: -70px;
     margin-left: auto;
     width: calc(100% - 286px);
     letter-spacing: 0em;
@@ -190,11 +204,10 @@
 
   @media screen and (min-width: 1344px) {
     margin-left: auto;
-
-    margin-right: 400px;
-    margin-top: -30px;
+    margin-right: 112px;
+    margin-top: -364px;
     width: calc(50% - 15px);
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.56;
   }
 
