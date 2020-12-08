@@ -2,7 +2,6 @@
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-
   @media screen and (min-width: 1344px) {
     padding-top: 130px;
     padding-bottom: 130px;
@@ -19,7 +18,6 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 @media screen and (max-width: 767px) {
   .reviews-title {
     display: none;
@@ -41,7 +39,6 @@
     font-size: 46px;
   }
 }
-
 h1,
 h2,
 h3,
@@ -53,33 +50,25 @@ p {
   width: 280px;
   margin-right: auto;
   margin-left: auto;
-
-
   @media screen and (min-width: 576px) {
     width: 490px;
     margin-right: auto;
     margin-left: auto;
-    
   }
-
   @media screen and (min-width: 768px) {
     width: 688px;
     display: flex;
     text-align: left;
-    
   }
-
   @media screen and (min-width: 1344px) {
     width: 1090px;
     display: flex;
   }
 }
-
 .our_client {
   display: flex;
   flex-direction: column;
   /* padding-top: 20px; */
-
   @media screen and (min-width: 768px) {
   }
 }
@@ -89,7 +78,6 @@ p {
   margin-left: auto;
   margin-bottom: 26px;
   padding-top: 20px;
-
   @media screen and (min-width: 768px) {
     padding-left: 40px;
     padding-top: 40px;
@@ -103,20 +91,17 @@ p {
   height: 48px;
   margin-right: auto;
   margin-left: auto;
-  fill:  #800080;
-
+  fill: #800080;
   &:hover,
   :focus {
     fill: black;
   }
 }
-
 @media screen and (min-width: 768px) {
   .info_our_client {
     width: calc(70% - 40px);
   }
 }
-
 .client_name {
   margin-top: 26px;
   font-weight: 800;
@@ -124,13 +109,11 @@ p {
   line-height: 1.214;
   letter-spacing: 0.08em;
   color: #800080;
-
   @media screen and (min-width: 768px) {
     margin-top: 20px;
     font-size: 20px;
     line-height: 1.2;
   }
-
   @media screen and (min-width: 1344px) {
     margin-top: 30px;
     font-size: 30px;
@@ -140,19 +123,16 @@ p {
 .client_grades {
   margin-top: 10px;
   margin-bottom: 10px;
-
   color: $secondary-text-color;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.08em;
-
   @media screen and (min-width: 768px) {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-right: 40px;
   }
-
   @media screen and (min-width: 1344px) {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -166,25 +146,21 @@ p {
   height: 165px;
   overflow: hidden;
   transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
-
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
-
   @media screen and (min-width: 576px) {
     height: 110px;
     padding-left: 0;
     overflow: hidden;
     transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
   }
-
   @media screen and (min-width: 768px) {
     height: 115px;
     padding-left: 0;
     overflow: hidden;
     transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
   }
-
   @media screen and (min-width: 1344px) {
     height: 168px;
     font-size: 18px;
@@ -214,92 +190,69 @@ p {
   background-color: transparent;
   overflow: visible;
   outline: none;
-  
-
   @media screen and (min-width: 1344px) {
     font-size: 18px;
     line-height: 1.555;
   }
 }
-
 .slider {
   width: 100%;
   margin: auto;
-  
-
   @media screen and (min-width: 768px) {
     width: 688px;
   }
-
   @media screen and (min-width: 1344px) {
     width: 1090px;
   }
 }
-
 /* Слайдер */
 .slick-slider {
   position: relative;
-  width: 280px; 
-
+  width: 280px;
   @media screen and (min-width: 576px) {
     width: 490px;
   }
-
   @media screen and (min-width: 768px) {
     width: 688px;
   }
-
   @media screen and (min-width: 1344px) {
     width: 1090px;
   }
 }
-
 /* Слайдер запущен */
 .slick-slider.slick-initialized {
 }
-
 /* Слайдер с точками */
 .slick-slider.slick-dotted {
 }
-
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
   box-shadow: -5px 8px 26px rgba(221, 34, 205, 0.8);
-  
 }
 .slick-list.draggable {
 }
-
 /* Лента слайдов */
 .slick-track {
   display: flex;
   align-items: flex-start;
 }
-
 /* Слайд */
 .slick-slide {
   padding: 20px 20px 30px 20px;
-
 }
-
 /* Слайд активный (показывается) */
 .slick-slide.slick-active {
-  
 }
-
 /* Слайд основной */
 .slick-slide.slick-current {
 }
-
 /* Слайд по центру */
 .slick-slide.slick-center {
 }
-
 /* Клонированный слайд */
 .slick-slide.slick-cloned {
 }
-
 /* Стрелка */
 .slick-arrow {
   position: absolute;
@@ -312,16 +265,13 @@ p {
   z-index: 10;
   outline: none;
   border: none;
-
   @media screen and (min-width: 576px) {
     bottom: 50%;
   }
-
   @media screen and (min-width: 768px) {
     bottom: 50%;
   }
 }
-
 /* Стрелка влево */
 .slick-arrow.slick-prev {
   left: 0%;
@@ -329,7 +279,6 @@ p {
   background-size: contain;
   border-radius: 50%;
   transform: rotate(45deg);
-
   @media screen and (min-width: 768px) {
     left: -5%;
   }
@@ -337,7 +286,6 @@ p {
     left: -8%;
   }
 }
-
 /* Стрелка вправо */
 .slick-arrow.slick-next {
   right: 0%;
@@ -345,7 +293,6 @@ p {
   background-size: contain;
   border-radius: 50%;
   transform: rotate(-45deg);
-
   @media screen and (min-width: 768px) {
     right: -5%;
   }
@@ -353,11 +300,9 @@ p {
     right: -8%;
   }
 }
-
 /* Стрелка не активная */
 .slick-arrow.slick-disabled {
 }
-
 /* Точки (булиты) */
 .slick-dots {
   position: relative;
@@ -368,15 +313,12 @@ p {
   margin-bottom: 0;
   padding: 0;
   flex-wrap: wrap;
-
   @media screen and (min-width: 768px) {
     margin-top: 30px;
   }
   @media screen and (min-width: 1344px) {
     margin-top: 40px;
   }
-
-
 }
 .slick-dots li button {
   width: 54px;
@@ -386,7 +328,6 @@ p {
   border: none;
   outline-color: orangered;
   outline: none;
-  
   @media screen and (min-width: 768px) {
     width: 64px;
     height: 64px;
@@ -397,50 +338,41 @@ p {
     height: 74px;
     background-size: contain;
   }
-  }
-
-
+}
 /* Активная точка */
 .slick-dots li.slick-active {
   border: 2px solid #800080;
   border-radius: 50%;
   outline-style: none;
   box-shadow: 0 0 10px 1px #800080;
-  
-  
 }
 /* Элемент точки */
 .slick-dots li {
   border: 2px solid grey;
   border-radius: 50%;
   margin-right: 10px;
-
   &:nth-last-of-type(-n + 1) {
     margin-right: 0px;
   }
-
   &:nth-child(4) {
     margin-right: 0px;
   }
   @media screen and (min-width: 576px) {
-  margin-right: 10px; 
-
-  &:nth-child(4) {
     margin-right: 10px;
-  } 
-}
-
+    &:nth-child(4) {
+      margin-right: 10px;
+    }
+  }
   @media screen and (min-width: 768px) {
-  margin-right: 20px;  }
-
+    margin-right: 20px;
+  }
   @media screen and (min-width: 1344px) {
-  margin-right: 30px;  
-  &:nth-child(4) {
     margin-right: 30px;
+    &:nth-child(4) {
+      margin-right: 30px;
+    }
   }
 }
-}
-
 #slick-slide-control00 {
   background-image: url(/images/reviews/cat2.png);
   background-repeat: no-repeat;
@@ -452,26 +384,21 @@ p {
   background-size: contain;
 }
 #slick-slide-control02 {
-  background-image: url(/images/reviews/cat3.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-#slick-slide-control03 {
   background-image: url(/images/reviews/cat4.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
-#slick-slide-control04 {
+#slick-slide-control03 {
   background-image: url(/images/reviews/cat6.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
-#slick-slide-control05 {
+#slick-slide-control04 {
   background-image: url(/images/reviews/cat7.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
-#slick-slide-control06 {
+#slick-slide-control05 {
   background-image: url(/images/reviews/cat8.png);
   background-repeat: no-repeat;
   background-size: contain;
